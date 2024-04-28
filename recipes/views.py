@@ -1,8 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def home(request):
-    return HttpResponse("Página inicial")
+    return render(request, "home.html")
 
 
 def contato(request):
